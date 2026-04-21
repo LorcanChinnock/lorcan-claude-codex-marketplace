@@ -72,7 +72,9 @@ After:
 
 ### 7. AI vocabulary
 
-**High-frequency offenders:** additionally, align with, crucial, delve, emphasising, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, intricacies, key (adjective), landscape (abstract), pivotal, showcase, tapestry, testament, underscore (verb), valuable, vibrant, leverage, seamless, seamlessly, robust, comprehensive, boasts.
+The canonical literal list lives in SKILL.md's self-check. PATTERNS.md covers the extended set (words that appear AI-flavoured in context but are not always wrong) and the plain-language replacements.
+
+**Extended set (context-dependent):** additionally, align with, emphasising, enduring, fostering, highlight (verb), intricacies, key (adjective), landscape (abstract).
 
 **Replacements:** use, smooth, explore, important, show, strong, full, mix, detailed, gather, grow, improve, key, useful, emphasise, reminder. Usually the simplest fix is to cut the word entirely.
 

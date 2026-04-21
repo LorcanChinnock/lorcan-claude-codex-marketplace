@@ -9,7 +9,7 @@
     {
       "name": "code-reviewer",
       "source": "./plugins/code-reviewer",
-      "description": "Rigorous multi-agent code review for local branch changes or a GitHub PR. Confidence-ranked findings, no GitHub mutations.",
+      "description": "Use when reviewing a local branch diff or a GitHub PR. Produces a local Markdown report with confidence-ranked findings and permalinks. Never posts to GitHub, never mutates files.",
       "author": {
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"

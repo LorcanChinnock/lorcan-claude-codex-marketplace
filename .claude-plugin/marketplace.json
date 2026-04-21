@@ -1,0 +1,12 @@
+{
+  "name": "lorcan-claude-marketplace",
+  "owner": {
+    "name": "Lorcan Chinnock",
+    "email": "ljchinnock@gmail.com"
+  },
+  "metadata": {
+    "description": "Lorcan's personal Claude Code plugin marketplace",
+    "version": "0.1.0"
+  },
+  "plugins": []
+}

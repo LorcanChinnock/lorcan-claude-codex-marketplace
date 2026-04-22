@@ -60,6 +60,17 @@
       },
       "category": "productivity",
       "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/handle-review"
+    },
+    {
+      "name": "docgen",
+      "source": "./plugins/docgen",
+      "description": "Generate software engineering documentation in Markdown. Runs a structured questionnaire, drafts to a fixed template, adds Mermaid diagrams where they help, and humanises the prose via humanize-text. Currently supports Feature Design docs; more doc types drop in as sibling skills.",
+      "author": {
+        "name": "Lorcan Chinnock",
+        "email": "ljchinnock@gmail.com"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/docgen"
     }
   ]
 }

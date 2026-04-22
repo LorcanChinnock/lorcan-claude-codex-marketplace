@@ -1,0 +1,9 @@
+{
+  "name": "rubber-duck-planner",
+  "version": "0.1.0",
+  "description": "Use when stress-testing a technical idea or implementation plan. Acts as a critical sparring partner through four phases — clarify, challenge, alternatives, converge — and produces a consolidated plan summary on exit. Pushes back with reasoning, never defaults to agreement.",
+  "author": {
+    "name": "Lorcan Chinnock",
+    "email": "ljchinnock@gmail.com"
+  }
+}

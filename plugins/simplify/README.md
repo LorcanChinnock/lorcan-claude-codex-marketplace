@@ -1,6 +1,6 @@
 # simplify
 
-Hub-and-spoke code simplifier for local code. Extracts the functional + non-functional contract first, dispatches specialised spokes in parallel, validates every proposal against the contract, then applies the survivors.
+Hub-and-spoke code simplifier for local code. Extracts the functional and non-functional contract first, dispatches parallel simplifier sub-agents, validates every proposal against the contract, scores, then applies the survivors (or reports only in plan mode).
 
 ## Install
 
@@ -10,24 +10,27 @@ Hub-and-spoke code simplifier for local code. Extracts the functional + non-func
 
 ## Invoke
 
-The plugin registers a `simplify` agent. Pass a scope argument:
+```
+/simplify                 # branch mode (default): diff vs merge-base with default branch
+/simplify staged          # staged changes
+/simplify working         # all uncommitted changes
+/simplify path/to/file.ts # whole-file mode, one or more paths
+```
 
-- `branch` — current branch diff vs its base (default).
-- `staged` — staged changes only.
-- `working` — all uncommitted changes.
-- One or more file or directory paths.
-
-In plan mode, the proposal report is the deliverable. In run mode, surviving proposals are applied.
+The skill also auto-triggers when the user asks in conversation to simplify, tidy, clean up, deduplicate, or remove dead code from local files.
 
 ## What it does
 
-- Contract first, cuts after — no simplification without understanding.
-- Confidence-weighted filtering — proposals under 75 are dropped.
-- Specialised spokes: dead-weight, redundancy, modernization, control-flow, boundary audit.
-- Modernization is evidence-based — uses the `context7` MCP to verify idioms against current docs.
+- Extracts the code's public API shape, observable behaviour, and implicit test invariants as a contract.
+- Tiers the work by scope size and dispatches spokes in parallel: Dead-weight, Redundancy, Modernization (verified via `context7` MCP), Control-flow, Boundary-audit.
+- Validates every proposal against the contract, scores 0–100, drops anything under 75.
+- Prints a proposal report, then applies survivors bottom-up per file.
+- Runs the repo's test command once if one is unambiguous; never auto-reverts on failure.
 
 ## What it does not do
 
-- No remote operations.
-- No changes outside the requested scope.
-- No proposals that would violate the extracted contract.
+- Does not commit, push, or mutate remote state.
+- Does not introduce new dependencies, abstractions, or architectural changes.
+- Does not run destructive git commands. Revert hint is always file-scoped (`git checkout <sha> -- <files>`).
+- Does not guess modern idioms from training data. If `context7` is unavailable, the Modernization spoke is skipped.
+- Does not operate outside the resolved scope — unrelated dirty work is never at risk.

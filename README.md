@@ -44,6 +44,8 @@ git clone https://github.com/LorcanChinnock/lorcan-claude-marketplace.git
 - [`describe-pr`](plugins/describe-pr) — write a conventional-commits title and PR description for the current branch from the raw diff vs base. Never pushes, commits, or opens a PR.
 - [`humanize-text`](plugins/humanize-text) — rewrite text to remove signs of AI-generated writing: inflated significance, promotional language, em-dash overuse, AI vocabulary, bolded-header bullets, sycophantic openers.
 - [`handle-review`](plugins/handle-review) — structured workflow for responding to code review or other critical feedback. Enforces verify-before-implement, reasoned push-back, one-item-at-a-time execution, and no performative agreement.
+- [`docgen`](plugins/docgen) — generate software engineering documentation in Markdown. Runs a structured questionnaire, drafts to a fixed template, adds Mermaid diagrams where they help, and humanises the prose. Currently supports Feature Design docs; more doc types drop in as sibling skills.
+- [`rubber-duck-planner`](plugins/rubber-duck-planner) — stress-test a technical idea or implementation plan. Acts as a critical sparring partner through four phases (clarify, challenge, alternatives, converge) and produces a consolidated plan summary on exit.
 
 Register each new plugin by adding an entry to the `plugins` array in `.claude-plugin/marketplace.json`.
 

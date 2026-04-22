@@ -11,10 +11,10 @@ Hub-and-spoke code simplifier for local code. Extracts the functional and non-fu
 ## Invoke
 
 ```
-/simplify-code                 # branch mode (default): diff vs merge-base with default branch
-/simplify-code staged          # staged changes
-/simplify-code working         # all uncommitted changes
-/simplify-code path/to/file.ts # whole-file mode, one or more paths
+/simplify-code:simplify-code                 # branch mode (default): diff vs merge-base with default branch
+/simplify-code:simplify-code staged          # staged changes
+/simplify-code:simplify-code working         # all uncommitted changes
+/simplify-code:simplify-code path/to/file.ts # whole-file mode, one or more paths
 ```
 
 The skill also auto-triggers when the user asks in conversation to simplify, tidy, clean up, deduplicate, or remove dead code from local files.

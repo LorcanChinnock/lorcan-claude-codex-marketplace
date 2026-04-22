@@ -42,6 +42,9 @@ git clone https://github.com/LorcanChinnock/lorcan-claude-marketplace.git
 - [`review-code`](plugins/review-code) — rigorous multi-agent review of a GitHub PR or the current branch's raw diff, with confidence-ranked findings.
 - [`simplify-code`](plugins/simplify-code) — hub-and-spoke orchestrator for aggressive-but-safe local code simplification, validated against the extracted contract.
 - [`describe-pr`](plugins/describe-pr) — generate a conventional-commits title and a structured PR description from the raw diff vs base.
+- [`humanize-text`](plugins/humanize-text) — rewrite prose to remove signs of AI writing (em-dash overuse, inflated significance, bolded-header bullets, sycophantic openers).
+- [`author-plugin`](plugins/author-plugin) — scaffold a new Claude Code plugin from a plain-English requirement, checked against a deterministic rubric and fresh-context reviewer.
+- [`handle-review`](plugins/handle-review) — structured workflow for responding to code review or other critical feedback: verify before implementing, push back with reasons, one item at a time.
 
 ## Layout
 
@@ -49,10 +52,9 @@ git clone https://github.com/LorcanChinnock/lorcan-claude-marketplace.git
 .claude-plugin/marketplace.json   # marketplace manifest
 plugins/<plugin-name>/            # each plugin lives here
   .claude-plugin/plugin.json      # plugin manifest
-  skills/<name>/SKILL.md          # user- or model-invoked skills (preferred)
+  skills/<name>/SKILL.md          # user- or model-invoked skills
   agents/<name>.md                # specialised sub-agents
   hooks/ .mcp.json                # optional
-  commands/<name>.md              # legacy — prefer skills/
 ```
 
 Register each new plugin by adding an entry to the `plugins` array in `.claude-plugin/marketplace.json`.

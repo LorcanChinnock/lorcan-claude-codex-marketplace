@@ -11,7 +11,7 @@ Evaluate code review or other critical feedback with technical rigor. Verify, pu
 ## Invoke
 
 ```
-/handle-review [<pr-number-or-url>]
+/handle-review:handle-review [<pr-number-or-url>]
 ```
 
 The skill also triggers conversationally when you paste review feedback or ask Claude to address review comments.

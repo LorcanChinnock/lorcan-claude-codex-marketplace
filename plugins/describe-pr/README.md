@@ -11,7 +11,7 @@ Write a conventional-commits title and PR description for the current branch. Re
 ## Invoke
 
 ```
-/describe-pr
+/describe-pr:describe-pr
 ```
 
 Or ask in conversation ("write a PR description for this branch"). Both routes run the same skill on the current branch against its base.

@@ -51,17 +51,6 @@
       "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/humanize-text"
     },
     {
-      "name": "author-plugin",
-      "source": "./plugins/author-plugin",
-      "description": "Generate a Claude Code plugin from a plain-English requirement. Picks the right surfaces (skills, subagents, hooks, MCP servers, reference docs), scaffolds files, checks them against a deterministic rubric, returns a fresh-context reviewer verdict, and proposes a marketplace.json diff.",
-      "author": {
-        "name": "Lorcan Chinnock",
-        "email": "ljchinnock@gmail.com"
-      },
-      "category": "productivity",
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/author-plugin"
-    },
-    {
       "name": "handle-review",
       "source": "./plugins/handle-review",
       "description": "Use when responding to code review or other critical feedback (PR comments, design review, written critique). Enforces verify-before-implement, reasoned push-back, one-item-at-a-time execution, and no performative agreement. Includes read-only gh helpers for PR context.",

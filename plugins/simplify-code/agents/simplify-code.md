@@ -38,19 +38,19 @@ One Haiku `Agent` returns absolute paths of ancestor `CLAUDE.md` files, adjacent
 
 ### 4. Contract extraction (Sonnet)
 
-Apply `${CLAUDE_PLUGIN_ROOT}/agents/CONTRACT.md` verbatim. One Sonnet `Agent` produces the contract — ground truth for every downstream step. Never skip.
+Apply `${CLAUDE_PLUGIN_ROOT}/skills/simplify-code/CONTRACT.md` verbatim. One Sonnet `Agent` produces the contract — ground truth for every downstream step. Never skip.
 
 ### 5. Spoke dispatch (parallel, Sonnet)
 
-Apply `${CLAUDE_PLUGIN_ROOT}/agents/SPOKES.md`: tier table selects which spokes run; verbatim briefs for each. Launch selected spokes in a single message with multiple `Agent` uses.
+Apply `${CLAUDE_PLUGIN_ROOT}/skills/simplify-code/SPOKES.md`: tier table selects which spokes run; verbatim briefs for each. Launch selected spokes in a single message with multiple `Agent` uses.
 
 ### 6. Validation (parallel, Sonnet)
 
-Apply the validator brief in `${CLAUDE_PLUGIN_ROOT}/agents/SPOKES.md`. One per proposal. DROP when not certainly contract-preserving; MODIFY only when trivial.
+Apply the validator brief in `${CLAUDE_PLUGIN_ROOT}/skills/simplify-code/SPOKES.md`. One per proposal. DROP when not certainly contract-preserving; MODIFY only when trivial.
 
 ### 7. Score (parallel, Haiku)
 
-Apply the rubric in `${CLAUDE_PLUGIN_ROOT}/agents/SPOKES.md`. Drop under 75.
+Apply the rubric in `${CLAUDE_PLUGIN_ROOT}/skills/simplify-code/SPOKES.md`. Drop under 75.
 
 ### 8. Consolidate
 
@@ -58,7 +58,7 @@ Merge compatible proposals; conflicts resolve to higher score. Group by file; or
 
 ### 9. Report
 
-Print the report format from `${CLAUDE_PLUGIN_ROOT}/agents/SPOKES.md` before any `Edit`. If zero survive, print the empty-report form and stop.
+Print the report format from `${CLAUDE_PLUGIN_ROOT}/skills/simplify-code/SPOKES.md` before any `Edit`. If zero survive, print the empty-report form and stop.
 
 ### 10. Apply
 

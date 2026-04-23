@@ -49,6 +49,12 @@ git clone https://github.com/LorcanChinnock/lorcan-claude-marketplace.git
 
 Register each new plugin by adding an entry to the `plugins` array in `.claude-plugin/marketplace.json`.
 
+## Conventions
+
+- **Versioning**: each plugin's `version` lives in its own `.claude-plugin/plugin.json` (not in the marketplace entry). The Claude Code docs note that for relative-path marketplaces the spec prefers the marketplace entry, but `plugin.json` wins silently when both are set and keeping it with the plugin keeps the bump local to the change. Only ever set the version in one place.
+- **Bumping**: bump `version` in `plugin.json` whenever you change that plugin's skills, agents, hooks, commands, or other user-facing behavior. Patch for small tweaks, minor for new features, major for breaking changes.
+- **Validation**: run `claude plugin validate .` from the repo root before pushing. The marketplace and every plugin should validate cleanly.
+
 ## License
 
 [MIT](LICENSE).

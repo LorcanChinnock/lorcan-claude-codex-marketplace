@@ -1,1 +1,2 @@
 - README and manifests should be kept up to date with changes
+- After changing a plugin's skills, agents, hooks, commands, or other user-facing behavior, bump the `version` in that plugin's `.claude-plugin/plugin.json` (patch for small tweaks, minor for new features, major for breaking changes)

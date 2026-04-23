@@ -1,9 +1,13 @@
 {
   "name": "review-code",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Use when reviewing a local branch diff or a GitHub PR. Produces a local Markdown report with confidence-ranked findings and permalinks. Never posts to GitHub, never mutates files.",
   "author": {
     "name": "Lorcan Chinnock",
     "email": "ljchinnock@gmail.com"
-  }
+  },
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/review-code",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "license": "MIT",
+  "keywords": ["code-review", "pull-request", "quality", "audit", "security"]
 }

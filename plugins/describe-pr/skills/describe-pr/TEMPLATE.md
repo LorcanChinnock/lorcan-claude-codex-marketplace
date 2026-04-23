@@ -26,7 +26,11 @@ Keep the headings exactly as written. Replace each placeholder with real content
 <1–3 sentences leading with motivation, then mechanism. Do not write "this PR" or "this change".>
 
 ## Release note
-<one user-visible sentence. Default: "Implemented new feature.">
+<ticket ID + one-line description of the change. Formats, in order of preference:
+- `[TICKET-ID](url): <one-line description of the change>` — when a ticket URL is known (from the branch name + a configured issue tracker, or from the open PR body).
+- `TICKET-ID: <one-line description of the change>` — when the branch yields a ticket ID but no URL is available.
+- `<one-line description of the change>` — only when the branch has no recognisable ticket (e.g. no `ABC-123`-shaped token) and the user did not supply one.
+Description is imperative, sentence case, ends with a period. Do not write "Implemented new feature." as a placeholder — if the user said "just write it" and no ticket is known, write the real one-line description from the diff.>
 
 ## Summary
 <What another developer needs to know to review or maintain this. Lead with why. 2–6 short sentences or a short bulleted list of decisions and tradeoffs. Skip what the diff already shows.>
@@ -63,3 +67,4 @@ Before printing, verify:
 - Optional sections (if any) sit below Follow-up issues, never above.
 - Mermaid block (if present) parses as valid Mermaid and adds information beyond the prose.
 - If you claimed a metric, it is a real number from the conversation, not a placeholder.
+- Release note matches one of the three formats above: ticket-with-link, ticket-only, or plain description. The default "Implemented new feature." placeholder never appears in the output.

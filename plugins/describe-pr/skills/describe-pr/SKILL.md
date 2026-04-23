@@ -47,8 +47,8 @@ Note uncommitted changes once. Describe what is committed.
 
 Split what you can infer from what you cannot:
 
-- **Known**: files touched, APIs added or removed, schema changes, config flags introduced, tests added, dependencies changed.
-- **Unknown**: motivation, ticket links, rollout, feature-flag state, perf numbers, screenshots, product intent, follow-ups.
+- **Known**: files touched, APIs added or removed, schema changes, config flags introduced, tests added, dependencies changed. Also scan the branch name for a ticket ID of shape `[A-Z]+-\d+` (e.g. `GX-24525`, `ABC-123`) — if found, carry it into the release note. If the user's instructions (e.g. a project or global `CLAUDE.md`) give an issue-tracker base URL, build a link; otherwise keep the bare ticket ID.
+- **Unknown**: motivation, rollout, feature-flag state, perf numbers, screenshots, product intent, follow-ups. Also: the ticket ID and its link when the branch name contains no recognisable ticket token and no open PR body supplies one.
 
 Do not invent unknowns.
 

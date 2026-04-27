@@ -23,20 +23,20 @@ Examples:
 Keep the headings exactly as written. Replace each placeholder with real content, or keep the heading with `None.` if truly empty.
 
 ```markdown
-<1–3 sentences leading with motivation, then mechanism. Do not write "this PR" or "this change".>
+<1–3 sentences in first person, leading with the problem I was solving, then the approach I took. Example shape: "I hit X when Y, so I did Z." Do not write "this PR", "this change", or "the author". The diff shows what changed, this paragraph says why.>
 
 ## Release note
 <ticket ID + one-line description of the change. Formats, in order of preference:
 - `[TICKET-ID](url): <one-line description of the change>` — when a ticket URL is known (from the branch name + a configured issue tracker, or from the open PR body).
 - `TICKET-ID: <one-line description of the change>` — when the branch yields a ticket ID but no URL is available.
 - `<one-line description of the change>` — only when the branch has no recognisable ticket (e.g. no `ABC-123`-shaped token) and the user did not supply one.
-Description is imperative, sentence case, ends with a period. Do not write "Implemented new feature." as a placeholder — if the user said "just write it" and no ticket is known, write the real one-line description from the diff.>
+Description is imperative, sentence case, ends with a period. The release note is the user-facing line, not a personal note, so keep it neutral imperative ("Add usage-based pricing.") rather than first person. Do not write "Implemented new feature." as a placeholder — if the user said "just write it" and no ticket is known, write the real one-line description from the diff.>
 
 ## Summary
-<What another developer needs to know to review or maintain this. Lead with why. 2–6 short sentences or a short bulleted list of decisions and tradeoffs. Skip what the diff already shows.>
+<First person, why-led, written as me briefing a reviewer. Open with the problem or constraint that prompted the change. Then say what I considered and rejected, what tradeoff I accepted, and any assumption a reviewer should know about. 2–6 short sentences or a short bulleted list. Do not restate the diff. Do not list files touched. If I cannot say why in one sentence, I have not finished thinking.>
 
 ## Testing steps
-<Concrete steps a reviewer can run, or a description of automated test coverage. If the change is not testable, say why.>
+<First person where natural ("I verified X by …", "I ran the suite locally"). Concrete steps a reviewer can run, or a description of automated test coverage I added. If the change is not testable, say why.>
 
 ## Feature flag
 <Flag name + default, or "No.">
@@ -66,5 +66,6 @@ Before printing, verify:
 - All five required sections are present in order with exact headings.
 - Optional sections (if any) sit below Follow-up issues, never above.
 - Mermaid block (if present) parses as valid Mermaid and adds information beyond the prose.
-- If you claimed a metric, it is a real number from the conversation, not a placeholder.
+- If I claimed a metric, it is a real number from the conversation, not a placeholder.
 - Release note matches one of the three formats above: ticket-with-link, ticket-only, or plain description. The default "Implemented new feature." placeholder never appears in the output.
+- Lead paragraph and Summary are first person and open with why, not what. Testing uses first person where natural. Release note stays neutral imperative.

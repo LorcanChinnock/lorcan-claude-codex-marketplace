@@ -1,6 +1,6 @@
 ---
 name: describe-pr
-description: Use when the user asks for a PR title or description, or runs /describe-pr. Reads raw diff vs base, asks only what the diff cannot answer, then writes a conventional-commits title plus a fixed-template body (Release note, Summary, Testing, Feature flag, Follow-ups). Prose follows humaniser rules.
+description: Use when the user asks for a PR title or description, or runs /describe-pr. Reads raw diff vs base, asks heavily about why the change was made (the diff already shows what and how), then writes a conventional-commits title plus a first-person, fixed-template body (Release note, Summary, Testing, Feature flag, Follow-ups). Prose follows humaniser rules.
 allowed-tools:
   - Bash
   - Read
@@ -43,31 +43,40 @@ gh pr view --json number,title,body,url,baseRefName 2>/dev/null
 
 Note uncommitted changes once. Describe what is committed.
 
-### 2. Separate known from unknown
+### 2. Separate what the diff shows from what only I know
 
-Split what you can infer from what you cannot:
+The diff already shows what changed and how. Do not restate it. The job here is to find the smallest set of things the diff cannot show, so step 3 can ask for them.
 
-- **Known**: files touched, APIs added or removed, schema changes, config flags introduced, tests added, dependencies changed. Also scan the branch name for a ticket ID of shape `[A-Z]+-\d+` (e.g. `GX-24525`, `ABC-123`) — if found, carry it into the release note. If the user's instructions (e.g. a project or global `CLAUDE.md`) give an issue-tracker base URL, build a link; otherwise keep the bare ticket ID.
-- **Unknown**: motivation, rollout, feature-flag state, perf numbers, screenshots, product intent, follow-ups. Also: the ticket ID and its link when the branch name contains no recognisable ticket token and no open PR body supplies one.
+- **Diff shows (do not ask)**: files touched, APIs added or removed, schema changes, config flags introduced, tests added, dependencies changed. Also scan the branch name for a ticket ID of shape `[A-Z]+-\d+` (e.g. `GX-24525`, `ABC-123`) — if found, carry it into the release note. If the user's instructions (e.g. a project or global `CLAUDE.md`) give an issue-tracker base URL, build a link; otherwise keep the bare ticket ID.
+- **Only I know (must ask)**: why this change exists, what problem prompted it, what alternatives I considered and rejected, what constraints shaped the approach, rollout plan, feature-flag state, real perf numbers, follow-up work, and the ticket ID when the branch carries none.
 
-Do not invent unknowns.
+Do not invent unknowns. Do not guess motivation from file names.
 
 ### 3. Ask clarifying questions
 
-Ask the smallest set needed to write accurately, all at once:
+Ask the smallest set needed to write accurately, all at once. Weight the question budget heavily toward motivation — that is the part a reviewer cannot reconstruct from the diff. Reserve at most one or two questions for logistics (flag, follow-ups).
 
-- What is the motivation (ticket, incident, user ask)?
+Why-first questions (ask most of these):
+
+- What problem prompted this? Ticket, incident, user complaint, business ask, or something I noticed?
+- What did I consider and reject, and why did this approach win?
+- What constraint shaped the design (deadline, existing API, perf budget, backwards compat)?
+- What's the risk if this is wrong, and what would I look at first?
+- Is there an edge case or assumption a reviewer should know about?
+
+Logistics questions (only if they apply):
+
 - Is this behind a feature flag? Name and default?
-- What release-note line should users see?
-- Any metric or benchmark to include (specific numbers)?
+- Any real metric or benchmark to include (specific numbers, no guesses)?
 - Any follow-up issues already filed?
-- Anything non-obvious about testing?
 
-Skip questions the diff already answers. If the user replies "just write it", proceed and mark unknowns as `TBD` inline.
+Skip questions the diff already answers. If the user replies "just write it", proceed and mark unknowns as `TBD` inline rather than fabricating motivation.
 
 ### 4. Write
 
 Read [TEMPLATE.md](TEMPLATE.md) for title format, required sections, and Mermaid guidance. Read [STYLE.md](STYLE.md) for prose rules. Output must pass every check in both.
+
+Voice: write Summary and Testing in first person, as me explaining the change to a teammate at the desk. "I added X because Y." Not "the author added X" or "this PR adds X". Release note and headings stay neutral.
 
 Print in this order:
 

@@ -1,0 +1,13 @@
+{
+  "name": "coralogix",
+  "version": "0.1.0",
+  "description": "Query Coralogix logs/traces/metrics, design alerts, and design dashboards via the Coralogix MCP. Read-only by default — alert mutations require explicit confirmation.",
+  "author": {
+    "name": "Lorcan Chinnock",
+    "email": "ljchinnock@gmail.com"
+  },
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/coralogix",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "license": "MIT",
+  "keywords": ["coralogix", "observability", "logs", "metrics", "traces", "alerts", "dashboards", "mcp"]
+}

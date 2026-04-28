@@ -99,6 +99,19 @@
       "license": "MIT",
       "category": "observability",
       "keywords": ["coralogix", "observability", "logs", "metrics", "traces", "alerts", "dashboards", "mcp"]
+    },
+    {
+      "name": "tech-docs",
+      "source": "./plugins/tech-docs",
+      "description": "Write technical docs (architecture overviews, feature designs, runbooks, getting-started guides, READMEs, tech-debt notes, how-tos, implementation plans, RFCs, and more). Asks the doc type and audience first, runs targeted clarifying questions one at a time, then drafts in plain language with structured markdown and pastel mermaid diagrams where they help. Output is humanised, with no AI tells.",
+      "author": {
+        "name": "Lorcan Chinnock",
+        "email": "ljchinnock@gmail.com"
+      },
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/tech-docs",
+      "license": "MIT",
+      "category": "documentation",
+      "keywords": ["documentation", "technical-writing", "mermaid", "ADR", "runbook", "RFC", "README"]
     }
   ]
 }

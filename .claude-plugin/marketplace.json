@@ -75,19 +75,6 @@
       "keywords": ["code-review", "pull-request", "feedback", "critique"]
     },
     {
-      "name": "docgen",
-      "source": "./plugins/docgen",
-      "description": "Generate software engineering documentation in Markdown. Runs a structured questionnaire, drafts to a fixed template, adds Mermaid diagrams where they help, and humanises the prose via humanize-text. Currently supports Feature Design docs; more doc types drop in as sibling skills.",
-      "author": {
-        "name": "Lorcan Chinnock",
-        "email": "ljchinnock@gmail.com"
-      },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/docgen",
-      "license": "MIT",
-      "category": "documentation",
-      "keywords": ["documentation", "design-doc", "mermaid", "markdown", "feature-design"]
-    },
-    {
       "name": "rubber-duck-planner",
       "source": "./plugins/rubber-duck-planner",
       "description": "Use when stress-testing a technical idea or implementation plan. Acts as a critical sparring partner through four phases — clarify, challenge, alternatives, converge — and produces a consolidated plan summary on exit. Pushes back with reasoning, never defaults to agreement.",

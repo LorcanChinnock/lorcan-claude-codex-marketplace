@@ -5,7 +5,7 @@ Write a conventional-commits title and PR description for the current branch. Re
 ## Install
 
 ```
-/plugin install describe-pr@lorcan-claude-codex-marketplace
+/plugin install describe-pr@lorcan-claude-marketplace
 ```
 
 ## Invoke

@@ -6,8 +6,8 @@
     "name": "Lorcan Chinnock",
     "email": "ljchinnock@gmail.com"
   },
-  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/humanize-text",
-  "repository": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace",
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/humanize-text",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
   "license": "MIT",
   "keywords": [
     "writing",
@@ -26,7 +26,7 @@
       "Read",
       "Write"
     ],
-    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/humanize-text",
+    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/humanize-text",
     "defaultPrompt": [
       "Humanize this text",
       "Edit this file to sound natural"

@@ -1,5 +1,5 @@
 {
-  "name": "lorcan-claude-codex-marketplace",
+  "name": "lorcan-claude-marketplace",
   "owner": {
     "name": "Lorcan Chinnock",
     "email": "ljchinnock@gmail.com"
@@ -17,7 +17,7 @@
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"
       },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/review-code",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/review-code",
       "license": "MIT",
       "category": "code-review",
       "keywords": ["code-review", "pull-request", "quality", "audit", "security"]
@@ -30,7 +30,7 @@
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"
       },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/simplify-code",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/simplify-code",
       "license": "MIT",
       "category": "refactoring",
       "keywords": ["refactoring", "cleanup", "simplification", "dead-code"]
@@ -43,7 +43,7 @@
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"
       },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/describe-pr",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/describe-pr",
       "license": "MIT",
       "category": "git-workflow",
       "keywords": ["pull-request", "git", "conventional-commits", "documentation", "mermaid"]
@@ -56,7 +56,7 @@
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"
       },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/humanize-text",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/humanize-text",
       "license": "MIT",
       "category": "writing",
       "keywords": ["writing", "editing", "prose", "ai-detection"]
@@ -69,7 +69,7 @@
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"
       },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/handle-review",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/handle-review",
       "license": "MIT",
       "category": "code-review",
       "keywords": ["code-review", "pull-request", "feedback", "critique"]
@@ -82,7 +82,7 @@
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"
       },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/docgen",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/docgen",
       "license": "MIT",
       "category": "documentation",
       "keywords": ["documentation", "design-doc", "mermaid", "markdown", "feature-design"]
@@ -95,7 +95,7 @@
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"
       },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/rubber-duck-planner",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/rubber-duck-planner",
       "license": "MIT",
       "category": "planning",
       "keywords": ["planning", "design", "critique", "rubber-duck"]
@@ -108,7 +108,7 @@
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"
       },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/coralogix",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/coralogix",
       "license": "MIT",
       "category": "observability",
       "keywords": ["coralogix", "observability", "logs", "metrics", "traces", "alerts", "dashboards", "mcp"]

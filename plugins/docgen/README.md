@@ -7,7 +7,7 @@ Currently supports **Feature Design** docs. More doc types land as siblings unde
 ## Install
 
 ```
-/plugin install docgen@lorcan-claude-codex-marketplace
+/plugin install docgen@lorcan-claude-marketplace
 ```
 
 ## Invoke

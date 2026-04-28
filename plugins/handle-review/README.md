@@ -5,7 +5,7 @@ Evaluate code review or other critical feedback with technical rigor. Verify, pu
 ## Install
 
 ```
-/plugin install handle-review@lorcan-claude-codex-marketplace
+/plugin install handle-review@lorcan-claude-marketplace
 ```
 
 ## Invoke

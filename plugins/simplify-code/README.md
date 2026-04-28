@@ -5,7 +5,7 @@ Hub-and-spoke code simplifier for local code. The `/simplify-code` skill is a th
 ## Install
 
 ```
-/plugin install simplify-code@lorcan-claude-codex-marketplace
+/plugin install simplify-code@lorcan-claude-marketplace
 ```
 
 ## Invoke

@@ -5,7 +5,7 @@ Rewrite text so it stops sounding AI-generated. Catches inflated significance, p
 ## Install
 
 ```
-/plugin install humanize-text@lorcan-claude-codex-marketplace
+/plugin install humanize-text@lorcan-claude-marketplace
 ```
 
 ## Invoke

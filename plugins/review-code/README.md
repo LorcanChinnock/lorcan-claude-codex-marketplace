@@ -5,7 +5,7 @@ Rigorous code review for local branch diffs or GitHub PRs. Produces a local Mark
 ## Install
 
 ```
-/plugin install review-code@lorcan-claude-codex-marketplace
+/plugin install review-code@lorcan-claude-marketplace
 ```
 
 ## Invoke

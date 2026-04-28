@@ -6,8 +6,8 @@
     "name": "Lorcan Chinnock",
     "email": "ljchinnock@gmail.com"
   },
-  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/coralogix",
-  "repository": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace",
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/coralogix",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
   "license": "MIT",
   "keywords": ["coralogix", "observability", "logs", "metrics", "traces", "alerts", "dashboards", "mcp"]
 }

@@ -6,8 +6,8 @@
     "name": "Lorcan Chinnock",
     "email": "ljchinnock@gmail.com"
   },
-  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/simplify-code",
-  "repository": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace",
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/simplify-code",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
   "license": "MIT",
   "keywords": [
     "refactoring",
@@ -29,7 +29,7 @@
       "Delegate",
       "Language-aware navigation"
     ],
-    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/simplify-code",
+    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/simplify-code",
     "defaultPrompt": [
       "Simplify the current branch",
       "Simplify staged changes"

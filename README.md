@@ -1,8 +1,8 @@
 # lorcan-claude-marketplace
 
-Personal Claude Code and Codex compatible plugin marketplace.
+Personal [Claude Code](https://docs.claude.com/en/docs/claude-code) plugin marketplace.
 
-## Claude Code install
+## Install
 
 Add the marketplace:
 
@@ -22,33 +22,19 @@ Or install a specific plugin directly:
 /plugin install <plugin-name>@lorcan-claude-marketplace
 ```
 
-Update:
+## Update
 
 ```
 /plugin marketplace update lorcan-claude-marketplace
 ```
 
-For local development, clone and point Claude at the working copy instead of GitHub:
+## Local development
+
+Clone and point Claude at the working copy instead of GitHub:
 
 ```
 git clone https://github.com/LorcanChinnock/lorcan-claude-marketplace.git
 /plugin marketplace add /absolute/path/to/lorcan-claude-marketplace
-```
-
-## Codex install
-
-Add the marketplace:
-
-```
-codex plugin marketplace add LorcanChinnock/lorcan-claude-marketplace
-```
-
-Then install or enable plugins through Codex's plugin UI or marketplace flow.
-
-For local development, point Codex at the working copy:
-
-```
-codex plugin marketplace add /absolute/path/to/lorcan-claude-marketplace
 ```
 
 ## Plugins
@@ -60,20 +46,14 @@ codex plugin marketplace add /absolute/path/to/lorcan-claude-marketplace
 - [`handle-review`](plugins/handle-review) — structured workflow for responding to code review or other critical feedback. Enforces verify-before-implement, reasoned push-back, one-item-at-a-time execution, and no performative agreement.
 - [`docgen`](plugins/docgen) — generate software engineering documentation in Markdown. Runs a structured questionnaire, drafts to a fixed template, adds Mermaid diagrams where they help, and humanises the prose. Currently supports Feature Design docs; more doc types drop in as sibling skills.
 - [`rubber-duck-planner`](plugins/rubber-duck-planner) — stress-test a technical idea or implementation plan. Acts as a critical sparring partner through four phases (clarify, challenge, alternatives, converge) and produces a consolidated plan summary on exit.
-- [`coralogix`](plugins/coralogix) — query Coralogix logs/traces/metrics, design alerts, and design dashboards via the Coralogix MCP. Read-only by default; alert mutations require explicit confirmation.
 
-Register each new plugin in both marketplaces:
-
-- Claude: add an entry to `.claude-plugin/marketplace.json`.
-- Codex: add an entry to `.agents/plugins/marketplace.json`.
+Register each new plugin by adding an entry to the `plugins` array in `.claude-plugin/marketplace.json`.
 
 ## Conventions
 
-- **Shared cores**: put provider-neutral behavior in `plugins/<name>/shared/`. Do not name runtime tools there; describe capabilities such as file read/write, shell, question tool, delegation/subagent capability, and language-aware navigation.
-- **Runtime wrappers**: keep Claude wrappers in `skills/<skill>/SKILL.md` and Codex wrappers in `codex/skills/<skill>/SKILL.md`. Wrappers stay thin: frontmatter plus the runtime-specific mapping to the shared core.
-- **Versioning**: each plugin's version lives in both `.claude-plugin/plugin.json` and `.codex-plugin/plugin.json`. User-facing behavior changes bump both manifests for the affected plugin.
-- **Bumping**: patch for small tweaks, minor for new features, major for breaking changes.
-- **Validation**: run `claude plugin validate .` and `codex plugin marketplace add /absolute/path/to/lorcan-claude-marketplace` before pushing. Confirm Codex sees all eight plugins.
+- **Versioning**: each plugin's `version` lives in its own `.claude-plugin/plugin.json` (not in the marketplace entry). The Claude Code docs note that for relative-path marketplaces the spec prefers the marketplace entry, but `plugin.json` wins silently when both are set and keeping it with the plugin keeps the bump local to the change. Only ever set the version in one place.
+- **Bumping**: bump `version` in `plugin.json` whenever you change that plugin's skills, agents, hooks, commands, or other user-facing behavior. Patch for small tweaks, minor for new features, major for breaking changes.
+- **Validation**: run `claude plugin validate .` from the repo root before pushing. The marketplace and every plugin should validate cleanly.
 
 ## License
 

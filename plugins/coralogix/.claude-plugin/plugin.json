@@ -1,6 +1,6 @@
 {
   "name": "coralogix",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "Query Coralogix logs/traces/metrics, design alerts, and design dashboards via the Coralogix MCP. Read-only by default — alert mutations require explicit confirmation.",
   "author": {
     "name": "Lorcan Chinnock",

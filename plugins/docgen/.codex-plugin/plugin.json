@@ -1,0 +1,38 @@
+{
+  "name": "docgen",
+  "version": "0.2.1",
+  "description": "Generate software engineering documentation in Markdown. Uses a structured questionnaire to gather context, drafts to a fixed template, adds Mermaid diagrams where they help, and humanises the prose. First document type supported is Feature Design.",
+  "author": {
+    "name": "Lorcan Chinnock",
+    "email": "ljchinnock@gmail.com"
+  },
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/docgen",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "documentation",
+    "design-doc",
+    "mermaid",
+    "markdown",
+    "feature-design"
+  ],
+  "skills": "./codex/skills/",
+  "interface": {
+    "displayName": "Docgen",
+    "shortDescription": "Generate software engineering documentation in Markdown. Uses a structured questionnaire to gather context, drafts to a ",
+    "longDescription": "Generate software engineering documentation in Markdown. Uses a structured questionnaire to gather context, drafts to a fixed template, adds Mermaid diagrams where they help, and humanises the prose. First document type supported is Feature Design.",
+    "developerName": "Lorcan Chinnock",
+    "category": "Documentation",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Ask"
+    ],
+    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/docgen",
+    "defaultPrompt": [
+      "Draft a feature design doc",
+      "Create a design document"
+    ],
+    "brandColor": "#3B82F6"
+  }
+}

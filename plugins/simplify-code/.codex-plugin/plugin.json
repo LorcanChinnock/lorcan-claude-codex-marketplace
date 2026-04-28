@@ -1,0 +1,39 @@
+{
+  "name": "simplify-code",
+  "version": "0.3.3",
+  "description": "Use when the user asks to simplify, tidy, clean up, deduplicate, or remove dead code from local files. Accepts branch diff vs base (default), staged changes, working tree, or specified paths. Produces a confidence-scored proposal report and applies the survivors (proposal only in plan mode).",
+  "author": {
+    "name": "Lorcan Chinnock",
+    "email": "ljchinnock@gmail.com"
+  },
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/simplify-code",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "refactoring",
+    "cleanup",
+    "simplification",
+    "dead-code"
+  ],
+  "skills": "./codex/skills/",
+  "interface": {
+    "displayName": "Simplify Code",
+    "shortDescription": "Use when the user asks to simplify, tidy, clean up, deduplicate, or remove dead code from local files. Accepts branch di",
+    "longDescription": "Use when the user asks to simplify, tidy, clean up, deduplicate, or remove dead code from local files. Accepts branch diff vs base (default), staged changes, working tree, or specified paths. Produces a confidence-scored proposal report and applies the survivors (proposal only in plan mode).",
+    "developerName": "Lorcan Chinnock",
+    "category": "Refactoring",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Shell",
+      "Delegate",
+      "Language-aware navigation"
+    ],
+    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/simplify-code",
+    "defaultPrompt": [
+      "Simplify the current branch",
+      "Simplify staged changes"
+    ],
+    "brandColor": "#3B82F6"
+  }
+}

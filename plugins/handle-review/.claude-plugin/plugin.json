@@ -1,6 +1,6 @@
 {
   "name": "handle-review",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Use when responding to code review or other critical feedback (PR comments, design review, written critique). Enforces verify-before-implement, reasoned push-back, one-item-at-a-time execution, and no performative agreement. Includes read-only gh helpers for PR context.",
   "author": {
     "name": "Lorcan Chinnock",

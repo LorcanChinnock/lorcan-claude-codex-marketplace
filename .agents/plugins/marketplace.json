@@ -1,0 +1,104 @@
+{
+  "name": "lorcan-claude-marketplace",
+  "interface": {
+    "displayName": "Lorcan Claude/Codex Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "review-code",
+      "source": {
+        "source": "local",
+        "path": "./plugins/review-code"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Code Review"
+    },
+    {
+      "name": "simplify-code",
+      "source": {
+        "source": "local",
+        "path": "./plugins/simplify-code"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Refactoring"
+    },
+    {
+      "name": "describe-pr",
+      "source": {
+        "source": "local",
+        "path": "./plugins/describe-pr"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Writing"
+    },
+    {
+      "name": "humanize-text",
+      "source": {
+        "source": "local",
+        "path": "./plugins/humanize-text"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Writing"
+    },
+    {
+      "name": "handle-review",
+      "source": {
+        "source": "local",
+        "path": "./plugins/handle-review"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Code Review"
+    },
+    {
+      "name": "docgen",
+      "source": {
+        "source": "local",
+        "path": "./plugins/docgen"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Documentation"
+    },
+    {
+      "name": "rubber-duck-planner",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rubber-duck-planner"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Planning"
+    },
+    {
+      "name": "coralogix",
+      "source": {
+        "source": "local",
+        "path": "./plugins/coralogix"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Observability"
+    }
+  ]
+}

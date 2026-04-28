@@ -1,0 +1,39 @@
+{
+  "name": "handle-review",
+  "version": "0.1.2",
+  "description": "Use when responding to code review or other critical feedback (PR comments, design review, written critique). Enforces verify-before-implement, reasoned push-back, one-item-at-a-time execution, and no performative agreement. Includes read-only gh helpers for PR context.",
+  "author": {
+    "name": "Lorcan Chinnock",
+    "email": "ljchinnock@gmail.com"
+  },
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/handle-review",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "code-review",
+    "pull-request",
+    "feedback",
+    "critique"
+  ],
+  "skills": "./codex/skills/",
+  "interface": {
+    "displayName": "Handle Review",
+    "shortDescription": "Use when responding to code review or other critical feedback (PR comments, design review, written critique). Enforces v",
+    "longDescription": "Use when responding to code review or other critical feedback (PR comments, design review, written critique). Enforces verify-before-implement, reasoned push-back, one-item-at-a-time execution, and no performative agreement. Includes read-only gh helpers for PR context.",
+    "developerName": "Lorcan Chinnock",
+    "category": "Code Review",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Shell",
+      "Ask",
+      "Language-aware navigation"
+    ],
+    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/handle-review",
+    "defaultPrompt": [
+      "Handle this review comment",
+      "Verify and fix review feedback"
+    ],
+    "brandColor": "#3B82F6"
+  }
+}

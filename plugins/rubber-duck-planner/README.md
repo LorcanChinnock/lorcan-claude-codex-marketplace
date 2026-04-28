@@ -5,7 +5,7 @@ Stress-test a technical idea or plan with a critical sparring partner. Four phas
 ## Install
 
 ```
-/plugin install rubber-duck-planner@lorcan-claude-marketplace
+/plugin install rubber-duck-planner@lorcan-claude-codex-marketplace
 ```
 
 ## Invoke

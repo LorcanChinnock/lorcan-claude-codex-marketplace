@@ -1,4 +1,4 @@
-# lorcan-claude-marketplace
+# lorcan-claude-codex-marketplace
 
 Personal Claude Code and Codex compatible plugin marketplace.
 
@@ -7,7 +7,7 @@ Personal Claude Code and Codex compatible plugin marketplace.
 Add the marketplace:
 
 ```
-/plugin marketplace add LorcanChinnock/lorcan-claude-marketplace
+/plugin marketplace add LorcanChinnock/lorcan-claude-codex-marketplace
 ```
 
 Then browse and install plugins:
@@ -19,20 +19,20 @@ Then browse and install plugins:
 Or install a specific plugin directly:
 
 ```
-/plugin install <plugin-name>@lorcan-claude-marketplace
+/plugin install <plugin-name>@lorcan-claude-codex-marketplace
 ```
 
 Update:
 
 ```
-/plugin marketplace update lorcan-claude-marketplace
+/plugin marketplace update lorcan-claude-codex-marketplace
 ```
 
 For local development, clone and point Claude at the working copy instead of GitHub:
 
 ```
-git clone https://github.com/LorcanChinnock/lorcan-claude-marketplace.git
-/plugin marketplace add /absolute/path/to/lorcan-claude-marketplace
+git clone https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace.git
+/plugin marketplace add /absolute/path/to/lorcan-claude-codex-marketplace
 ```
 
 ## Codex install
@@ -40,7 +40,7 @@ git clone https://github.com/LorcanChinnock/lorcan-claude-marketplace.git
 Add the marketplace:
 
 ```
-codex plugin marketplace add LorcanChinnock/lorcan-claude-marketplace
+codex plugin marketplace add LorcanChinnock/lorcan-claude-codex-marketplace
 ```
 
 Then install or enable plugins through Codex's plugin UI or marketplace flow.
@@ -48,7 +48,7 @@ Then install or enable plugins through Codex's plugin UI or marketplace flow.
 For local development, point Codex at the working copy:
 
 ```
-codex plugin marketplace add /absolute/path/to/lorcan-claude-marketplace
+codex plugin marketplace add /absolute/path/to/lorcan-claude-codex-marketplace
 ```
 
 ## Plugins
@@ -73,7 +73,7 @@ Register each new plugin in both marketplaces:
 - **Runtime wrappers**: keep Claude wrappers in `skills/<skill>/SKILL.md` and Codex wrappers in `codex/skills/<skill>/SKILL.md`. Wrappers stay thin: frontmatter plus the runtime-specific mapping to the shared core.
 - **Versioning**: each plugin's version lives in both `.claude-plugin/plugin.json` and `.codex-plugin/plugin.json`. User-facing behavior changes bump both manifests for the affected plugin.
 - **Bumping**: patch for small tweaks, minor for new features, major for breaking changes.
-- **Validation**: run `claude plugin validate .` and `codex plugin marketplace add /absolute/path/to/lorcan-claude-marketplace` before pushing. Confirm Codex sees all eight plugins.
+- **Validation**: run `claude plugin validate .` and `codex plugin marketplace add /absolute/path/to/lorcan-claude-codex-marketplace` before pushing. Confirm Codex sees all eight plugins.
 
 ## License
 

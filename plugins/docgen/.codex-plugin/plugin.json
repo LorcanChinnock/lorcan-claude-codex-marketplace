@@ -6,8 +6,8 @@
     "name": "Lorcan Chinnock",
     "email": "ljchinnock@gmail.com"
   },
-  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/docgen",
-  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/docgen",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace",
   "license": "MIT",
   "keywords": [
     "documentation",
@@ -28,7 +28,7 @@
       "Write",
       "Ask"
     ],
-    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/docgen",
+    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/docgen",
     "defaultPrompt": [
       "Draft a feature design doc",
       "Create a design document"

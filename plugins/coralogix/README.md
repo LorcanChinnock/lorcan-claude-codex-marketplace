@@ -5,7 +5,7 @@ Query Coralogix logs/traces/metrics, design alerts, and design dashboards via th
 ## Install
 
 ```
-/plugin install coralogix@lorcan-claude-marketplace
+/plugin install coralogix@lorcan-claude-codex-marketplace
 ```
 
 ## Prerequisites

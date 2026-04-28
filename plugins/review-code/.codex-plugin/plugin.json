@@ -6,8 +6,8 @@
     "name": "Lorcan Chinnock",
     "email": "ljchinnock@gmail.com"
   },
-  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/review-code",
-  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/review-code",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace",
   "license": "MIT",
   "keywords": [
     "code-review",
@@ -29,7 +29,7 @@
       "Delegate",
       "Language-aware navigation"
     ],
-    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/review-code",
+    "websiteURL": "https://github.com/LorcanChinnock/lorcan-claude-codex-marketplace/tree/main/plugins/review-code",
     "defaultPrompt": [
       "Review the current branch",
       "Review PR 123"

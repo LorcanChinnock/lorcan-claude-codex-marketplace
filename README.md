@@ -39,12 +39,9 @@ git clone https://github.com/LorcanChinnock/lorcan-claude-marketplace.git
 
 ## Plugins
 
-- [`review-code`](plugins/review-code) — review a local branch diff or a GitHub PR; produces a local Markdown report with confidence-ranked findings and permalinks. Never posts to GitHub, never mutates files.
-- [`simplify-code`](plugins/simplify-code) — simplify, tidy, clean up, deduplicate, or remove dead code from local files. Produces a confidence-scored proposal report and applies the survivors (proposal only in plan mode).
 - [`describe-pr`](plugins/describe-pr) — write a conventional-commits title and PR description for the current branch from the raw diff vs base. Never pushes, commits, or opens a PR.
 - [`humanize-text`](plugins/humanize-text) — rewrite text to remove signs of AI-generated writing: inflated significance, promotional language, em-dash overuse, AI vocabulary, bolded-header bullets, sycophantic openers.
 - [`handle-review`](plugins/handle-review) — structured workflow for responding to code review or other critical feedback. Enforces verify-before-implement, reasoned push-back, one-item-at-a-time execution, and no performative agreement.
-- [`rubber-duck-planner`](plugins/rubber-duck-planner) — stress-test a technical idea or implementation plan. Acts as a critical sparring partner through four phases (clarify, challenge, alternatives, converge) and produces a consolidated plan summary on exit.
 - [`tech-docs`](plugins/tech-docs) — write technical docs (architecture overviews, feature designs, runbooks, getting-started guides, READMEs, tech-debt notes, how-tos, implementation plans, RFCs, and more). Asks the doc type and audience first, runs targeted clarifying questions one at a time, then drafts in plain language with structured markdown and pastel mermaid diagrams where they help. Output is humanised.
 
 Register each new plugin by adding an entry to the `plugins` array in `.claude-plugin/marketplace.json`.

@@ -6,7 +6,7 @@ Reference for the write-doc skill. The point is to remove the obvious tells of L
 
 Run the literal scan twice: once before writing each section, once on the full draft. If the second scan finds anything, run a third. Fix silently between passes; do not narrate.
 
-For drafts over 500 words, also read the extended catalogue at `../../../humanize-text/skills/humanize-text/PATTERNS.md` for edge cases beyond this list.
+For drafts over 500 words, use a Humanize skill if one is installed
 
 ## Self-check literals
 
@@ -46,7 +46,3 @@ For drafts over 500 words, also read the extended catalogue at `../../../humaniz
 - It does not mean adding folksy asides.
 - It does not mean rewriting the structure. The doc still follows the template.
 - It does not mean dropping precision. Numbers, version strings, command flags stay exact.
-
-## Source
-
-The literal list draws on the [humanize-text skill](../../../humanize-text/skills/humanize-text/PATTERNS.md) in the same marketplace. See that file for worked before/after examples on every pattern above.

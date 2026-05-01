@@ -45,7 +45,7 @@ Read these reference files before writing the first line:
 - [MERMAID.md](MERMAID.md) for the pastel palette, naming, grouping, and the four chart types.
 - [TEMPLATES.md](TEMPLATES.md) for the structure of the chosen type.
 
-If the draft will be over 500 words, also read the extended pattern catalogue at `../../../humanize-text/skills/humanize-text/PATTERNS.md`.
+If the draft will be over 500 words, use a Humanize skill if possible.
 
 Draft, then run the audience-translation pass, then run the self-check. The order matters; do not collapse them.
 

@@ -10,17 +10,17 @@
   },
   "plugins": [
     {
-      "name": "describe-pr",
-      "source": "./plugins/describe-pr",
-      "description": "Write a conventional-commits title and PR description for the current branch. Reads the raw diff vs base, asks heavily about why the change was made, then writes a humanised body in dropped-subject active voice with a Mermaid diagram where it helps. Never pushes, commits, or opens a PR.",
+      "name": "review-management",
+      "source": "./plugins/review-management",
+      "description": "PR lifecycle skills: describe-pr writes a conventional-commits title and humanised PR body from the raw diff vs base. handle-review processes incoming code review feedback — verify-before-implement, reasoned push-back, one item at a time, no performative agreement. Neither skill pushes, merges, or posts to GitHub.",
       "author": {
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"
       },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/describe-pr",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/review-management",
       "license": "MIT",
       "category": "git-workflow",
-      "keywords": ["pull-request", "git", "conventional-commits", "documentation", "mermaid"]
+      "keywords": ["pull-request", "git", "code-review", "conventional-commits", "feedback"]
     },
     {
       "name": "humanize",
@@ -34,19 +34,6 @@
       "license": "MIT",
       "category": "writing",
       "keywords": ["writing", "editing", "prose", "ai-detection", "code", "naming", "readability"]
-    },
-    {
-      "name": "handle-review",
-      "source": "./plugins/handle-review",
-      "description": "Use when responding to code review or other critical feedback (PR comments, design review, written critique). Enforces verify-before-implement, reasoned push-back, one-item-at-a-time execution, and no performative agreement. Includes read-only gh helpers for PR context.",
-      "author": {
-        "name": "Lorcan Chinnock",
-        "email": "ljchinnock@gmail.com"
-      },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/handle-review",
-      "license": "MIT",
-      "category": "code-review",
-      "keywords": ["code-review", "pull-request", "feedback", "critique"]
     },
     {
       "name": "tech-docs",

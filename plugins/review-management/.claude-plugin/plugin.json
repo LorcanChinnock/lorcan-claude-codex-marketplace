@@ -1,0 +1,13 @@
+{
+  "name": "review-management",
+  "version": "0.1.0",
+  "description": "PR lifecycle skills: describe-pr writes a conventional-commits title and humanised PR body from the raw diff vs base. handle-review processes incoming code review feedback — verify-before-implement, reasoned push-back, one item at a time, no performative agreement. Neither skill pushes, merges, or posts to GitHub.",
+  "author": {
+    "name": "Lorcan Chinnock",
+    "email": "ljchinnock@gmail.com"
+  },
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/review-management",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "license": "MIT",
+  "keywords": ["pull-request", "git", "code-review", "conventional-commits", "feedback"]
+}

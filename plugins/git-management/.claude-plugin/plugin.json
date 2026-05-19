@@ -1,0 +1,13 @@
+{
+  "name": "git-management",
+  "version": "0.1.0",
+  "description": "Local-only git workflow skills for managing stacked branches. Includes tools for splitting large branches into independently mergeable stacked PRs, and for rebasing entire stacks cleanly using git's --update-refs flag.",
+  "author": {
+    "name": "Lorcan Chinnock",
+    "email": "lorcan.chinnock@mews.com"
+  },
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/git-management",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "license": "MIT",
+  "keywords": ["git", "stacked-prs", "branches", "rebase", "workflow"]
+}

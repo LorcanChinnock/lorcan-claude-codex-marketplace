@@ -1,6 +1,6 @@
 ---
 name: write-doc
-description: Use when the user asks to write a technical doc, runs /tech-docs:write-doc, or mentions drafting an architecture overview (AO), feature design, runbook, getting-started guide, README, tech-debt note, how-to, implementation plan, RFC, or similar. Asks the doc type and intended audience first, runs targeted clarifying questions one at a time, then drafts in clear plain language with structured markdown and pastel mermaid diagrams where they help. Output is humanised, with no AI tells.
+description: Use when the user asks to write a technical doc, runs /writing:write-doc, or mentions drafting an architecture overview (AO), feature design, runbook, getting-started guide, README, tech-debt note, how-to, implementation plan, RFC, or similar. Asks the doc type and intended audience first, runs targeted clarifying questions one at a time, then drafts in clear plain language with structured markdown and pastel mermaid diagrams where they help. Output is humanised, with no AI tells.
 allowed-tools:
   - Read
   - Write
@@ -18,7 +18,7 @@ Five steps. Do not start writing until step 4 is resolved.
 
 ### 1. Ask the doc type
 
-Use `AskUserQuestion`. The user may name a type freely; accept anything. The list in [TEMPLATES.md](TEMPLATES.md) is a quick reference, not a closed set. If the user names something off-list, ask once whether one of the listed types is close enough to use as a base, otherwise improvise a structure that fits the spirit of the request.
+Use `AskUserQuestion`. The user may name a type freely; accept anything. The list in [TEMPLATES.md](references/TEMPLATES.md) is a quick reference, not a closed set. If the user names something off-list, ask once whether one of the listed types is close enough to use as a base, otherwise improvise a structure that fits the spirit of the request.
 
 ### 2. Ask the audience, always
 
@@ -26,7 +26,7 @@ Audience drives every other decision: depth, jargon level, what to assume, what 
 
 ### 3. Ask the rest, one question at a time
 
-Read [TEMPLATES.md](TEMPLATES.md) for the chosen type. It lists the questions that matter most for that template. Ask them through `AskUserQuestion`, one question per call, looping until the user has nothing left or says "just write it". Never batch questions into a numbered list expecting one combined answer.
+Read [TEMPLATES.md](references/TEMPLATES.md) for the chosen type. It lists the questions that matter most for that template. Ask them through `AskUserQuestion`, one question per call, looping until the user has nothing left or says "just write it". Never batch questions into a numbered list expecting one combined answer.
 
 Always weight questions toward what the user knows but the codebase or files cannot show: motivation, constraints, alternatives considered, decisions already made, who owns what, where things actually live. Skip anything the workspace can answer; read files instead.
 
@@ -40,10 +40,10 @@ Ask `AskUserQuestion`: where should the doc be written? Offer a sensible default
 
 Read these reference files before writing the first line:
 
-- [STYLE.md](STYLE.md) for markdown structure, plain-language rules, formatting.
-- [HUMANIZE.md](HUMANIZE.md) for the AI tells to scrub before printing.
-- [MERMAID.md](MERMAID.md) for the pastel palette, naming, grouping, and the four chart types.
-- [TEMPLATES.md](TEMPLATES.md) for the structure of the chosen type.
+- [STYLE.md](references/STYLE.md) for markdown structure, plain-language rules, formatting.
+- [HUMANIZE.md](references/HUMANIZE.md) for the AI tells to scrub before printing.
+- [MERMAID.md](references/MERMAID.md) for the pastel palette, naming, grouping, and the four chart types.
+- [TEMPLATES.md](references/TEMPLATES.md) for the structure of the chosen type.
 
 If the draft will be over 500 words, use a Humanize skill if possible.
 

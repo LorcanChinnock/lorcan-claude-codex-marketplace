@@ -46,11 +46,11 @@ Push back when:
 
 How to push back: state the finding, cite the file or test, propose the alternative. No defensiveness. No apology.
 
-Apply [PATTERNS.md](PATTERNS.md) for push-back templates.
+Apply [PATTERNS.md](references/PATTERNS.md) for push-back templates.
 
 ### 4. Acknowledge correct feedback in the code
 
-When feedback is right, fix it and say what changed in one line. Before replying, scan the draft against the forbidden-phrase list in [PATTERNS.md](PATTERNS.md) and rewrite any match. If you catch yourself typing "Thanks", delete it. Acknowledgement templates also live in [PATTERNS.md](PATTERNS.md).
+When feedback is right, fix it and say what changed in one line. Before replying, scan the draft against the forbidden-phrase list in [PATTERNS.md](references/PATTERNS.md) and rewrite any match. If you catch yourself typing "Thanks", delete it. Acknowledgement templates also live in [PATTERNS.md](references/PATTERNS.md).
 
 ### 5. Implement one item at a time
 
@@ -64,7 +64,7 @@ Test after each change. Do not batch without testing.
 
 ### 6. Fetch PR context when needed
 
-Read-only `gh` commands for pulling PR metadata, inline comments, and the diff live in [GH.md](GH.md). Never use `gh` to post, merge, approve, or request changes. Writes belong to the user.
+Read-only `gh` commands for pulling PR metadata, inline comments, and the diff live in [GH.md](references/GH.md). Never use `gh` to post, merge, approve, or request changes. Writes belong to the user.
 
 ### 7. When you pushed back and were wrong
 
@@ -72,7 +72,7 @@ State the correction factually: "Verified this. You're correct. Fixing." No long
 
 ### 8. Self-check before replying
 
-- No forbidden phrases (see [PATTERNS.md](PATTERNS.md)).
+- No forbidden phrases (see [PATTERNS.md](references/PATTERNS.md)).
 - Every item is addressed: restated, verified, implemented or pushed back.
 - Each implemented fix was tested.
 - Unclear items are surfaced, not guessed.

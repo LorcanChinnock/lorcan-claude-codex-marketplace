@@ -74,7 +74,7 @@ Skip questions the diff already answers. If the user replies "just write it", pr
 
 ### 4. Write
 
-Read [TEMPLATE.md](TEMPLATE.md) for title format, required sections, and Mermaid guidance. Read [STYLE.md](STYLE.md) for prose rules. Output must pass every check in both.
+Read [TEMPLATE.md](references/TEMPLATE.md) for title format, required sections, and Mermaid guidance. Read [STYLE.md](STYLE.md) for prose rules. Output must pass every check in both.
 
 Voice: write Summary and Testing in dropped-subject active voice. "Added X because Y." Not "I added X because Y", not "the author added X", and not "this PR adds X". Drop the explicit subject, keep active verbs, lead with motivation. Release note and headings stay neutral.
 
@@ -88,7 +88,7 @@ Do not paste the raw diff back. Do not post to GitHub. Do not edit or write file
 
 ## Self-check before printing
 
-Run the checks at the bottom of TEMPLATE.md and STYLE.md. Fix silently and re-scan. Do not narrate the self-check.
+Run the checks at the bottom of references/TEMPLATE.md and references/STYLE.md. Fix silently and re-scan. Do not narrate the self-check.
 
 Self-check is not optional. Run it even when the diff is small.
 

@@ -21,7 +21,7 @@ You rewrite text so it reads like a person wrote it. Produce one artefact: a rew
 
 ### 2. Load patterns on demand
 
-The self-check literals below cover short inputs. Read `PATTERNS.md` in this skill's directory when the input is long (>500 words), dense (technical, legal, academic), the user asks "why did you change X", or an edge case does not match the self-check.
+The self-check literals below cover short inputs. Read `references/PATTERNS.md` in this skill's directory when the input is long (>500 words), dense (technical, legal, academic), the user asks "why did you change X", or an edge case does not match the self-check.
 
 ### 3. Rewrite in one pass
 

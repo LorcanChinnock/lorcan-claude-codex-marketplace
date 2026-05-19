@@ -23,30 +23,17 @@
       "keywords": ["pull-request", "git", "code-review", "conventional-commits", "feedback"]
     },
     {
-      "name": "humanize",
-      "source": "./plugins/humanize",
-      "description": "Rewrite text and code to remove signs of AI-generated writing. Prose skill catches inflated significance, promotional language, em-dash overuse, AI vocabulary, bolded-header bullets, and sycophantic openers. Code skill renames verbose identifiers, simplifies comments and docstrings, and cleans up log / error / user-facing strings for non-native English readers.",
+      "name": "writing",
+      "source": "./plugins/writing",
+      "description": "Writing quality skills: humanize-text removes AI tells from prose, humanize-code cleans up verbose identifiers and padded comments, and write-doc authors technical documentation (AOs, runbooks, READMEs, RFCs, and more) with audience-aware plain language and pastel Mermaid diagrams.",
       "author": {
         "name": "Lorcan Chinnock",
         "email": "ljchinnock@gmail.com"
       },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/humanize",
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/writing",
       "license": "MIT",
       "category": "writing",
-      "keywords": ["writing", "editing", "prose", "ai-detection", "code", "naming", "readability"]
-    },
-    {
-      "name": "tech-docs",
-      "source": "./plugins/tech-docs",
-      "description": "Write technical docs (architecture overviews, feature designs, runbooks, getting-started guides, READMEs, tech-debt notes, how-tos, implementation plans, RFCs, and more). Asks the doc type and audience first, runs targeted clarifying questions one at a time, then drafts in plain language with structured markdown and pastel mermaid diagrams where they help. Output is humanised, with no AI tells.",
-      "author": {
-        "name": "Lorcan Chinnock",
-        "email": "ljchinnock@gmail.com"
-      },
-      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/tech-docs",
-      "license": "MIT",
-      "category": "documentation",
-      "keywords": ["documentation", "technical-writing", "mermaid", "ADR", "runbook", "RFC", "README"]
+      "keywords": ["writing", "editing", "prose", "ai-detection", "code", "naming", "documentation", "technical-writing"]
     },
     {
       "name": "git-management",

@@ -1,0 +1,13 @@
+{
+  "name": "writing",
+  "version": "0.1.0",
+  "description": "Writing quality skills: humanize-text removes AI tells from prose, humanize-code cleans up verbose identifiers and padded comments, and write-doc authors technical documentation (AOs, runbooks, READMEs, RFCs, and more) with audience-aware plain language and pastel Mermaid diagrams.",
+  "author": {
+    "name": "Lorcan Chinnock",
+    "email": "ljchinnock@gmail.com"
+  },
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/writing",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "license": "MIT",
+  "keywords": ["writing", "editing", "prose", "ai-detection", "code", "naming", "documentation", "technical-writing"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "creative-studio",
+  "version": "0.1.0",
+  "description": "Creative design skills for ideation and direction. The creative-director skill acts as a senior UX/creative director: it live-researches current AI design tropes to avoid and fresh references, then produces opinionated, conceptually rich design direction.",
+  "author": {
+    "name": "Lorcan Chinnock",
+    "email": "ljchinnock@gmail.com"
+  },
+  "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/creative-studio",
+  "repository": "https://github.com/LorcanChinnock/lorcan-claude-marketplace",
+  "license": "MIT",
+  "keywords": ["design", "ux", "creative", "ideation", "brand", "ui", "visual-design", "creative-direction"]
+}

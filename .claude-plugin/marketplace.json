@@ -47,6 +47,19 @@
       "license": "MIT",
       "category": "git-workflow",
       "keywords": ["git", "stacked-prs", "branches", "rebase", "workflow"]
+    },
+    {
+      "name": "creative-studio",
+      "source": "./plugins/creative-studio",
+      "description": "Creative design skills for ideation and direction. creative-director acts as a senior UX/creative director: live-researches current AI design tropes to avoid and fresh references each session, then produces opinionated, conceptually rich design direction — named concepts, a concrete recommendation, and a curated reference list. Never relies on baked-in research.",
+      "author": {
+        "name": "Lorcan Chinnock",
+        "email": "ljchinnock@gmail.com"
+      },
+      "homepage": "https://github.com/LorcanChinnock/lorcan-claude-marketplace/tree/main/plugins/creative-studio",
+      "license": "MIT",
+      "category": "design",
+      "keywords": ["design", "ux", "creative", "ideation", "brand", "ui", "visual-design", "creative-direction"]
     }
   ]
 }
